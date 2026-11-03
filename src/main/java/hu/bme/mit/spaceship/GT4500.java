@@ -97,6 +97,8 @@ public class GT4500 implements SpaceShip {
 
                 firingSuccess = primarySuccess || secondarySuccess;
                 break;
+                default:
+            throw new IllegalArgumentException("Unknown firing mode");
         }
 
         return firingSuccess;
